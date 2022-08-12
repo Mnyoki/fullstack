@@ -1,0 +1,38 @@
+- Ivoking PHP 
+<?php 
+echo "hello world!";
+?>
+
+- Using comments
+single line comment: 
+   //thi is a single line comment.
+
+Multi line comment:  
+   /* 
+      This is 
+      a multi line
+      comment
+
+    */
+
+  BASIC SYNTAX.
+    1. semicolon
+       -used to show end of a line ( a line break).
+         ie: 
+	     $number = 10;
+    2. The $ sybol.
+        - Used to initialize a charecter (initilizer of a character)
+	 ie:
+	     $firstName = "Moses";
+	     $lastName = "Munyoki";
+	     $myArray = ("john", "doe");
+	     $sum = 10 + 2;
+
+    3. Variable
+         - Are values assigned to the initialized character.
+	 ie:
+	     $userName = "admin";
+	     echo $userName;
+	     $currentUser = $userName
+
+     4. 
