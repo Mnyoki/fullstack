@@ -35,4 +35,61 @@ Multi line comment:
 	     echo $userName;
 	     $currentUser = $userName
 
-     4. 
+     4. Arrays.
+         - a set of date stored as group.
+	 ie:
+	     $myArray = array("john", "doe", "graham", "delta");
+
+	   a. two dimentional array.
+	   b. multi dimentional array.
+
+	       ie:
+	           -$OXO = array(array("O", "X", "O"),
+		                 array("X", "O", "X"),
+				 array("X", "O", "x"));
+				 echo $OXO[1][2];
+     5. Variable-naming rules.
+        a. Variable names after the dollar sign must start with a letter of the alphabet or _underscore character.
+	b. Variable names can contain only the charactersa-z,A-Z,0-9, and _.
+	c. Variable names ma not contain spaces. if a variable name must comprise more than one word, a good idea is to separate the words with the underscore (_) character 
+	  ie: user_name;
+	d. Variable names are case sensitive.
+
+     6. Operators
+       - Lets you perform mathematical operations, string comparison and logic oparation.
+       - You generally use a logic operator to combine the results of two of the comparison operators
+   
+     7. Variable Assignment.
+       - ie:
+           $variable = value;
+	   $other_variable = $variable;
+
+     8. String concatenation.
+       - Arcane term for putting something after another thing (joining).
+       - It uses a period to append one string after another thing.
+     9. String types.
+       - " " - Incluides the value of a variable inside a string
+       - ' ' - Assigns a literal string preserving the exact contents.
+
+     10 Escaping characters.
+       - These are characters used in defining built in character to laimans with the use of a back-slash (\).
+       ie: 
+         \n, \", \'.
+
+      11. Constants.
+         - Variable that are user and system defined and are not altered.
+	 ie: 
+	   define("ROOT_LOCATION", "/usr/local/www/");
+
+	   -Reading the contents of the variable.
+	   $directory = ROOT_LOCATION;
+
+	   NB// The main two things you have to remember about constants are that they must not be prefaced with a $(unlike regular variables), and that you can define them only using the define function.
+
+
+      12. Predefined Constants.
+         - System defined constants.
+	 ie: 
+	    __LINE__, __DIR__, __FILE__, __NAMESPACE__
+
+
