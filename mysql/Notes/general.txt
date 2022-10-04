@@ -1,0 +1,34 @@
+# Normalization - The process of separating your data into tables and creating primary key (avoid duplicates).
+    
+    keys - Makes search faster.
+       # types
+          1. First Normal form
+             - There should be no repeating columns containing the same kind od data.
+             - All columns should contain a single value.
+             - There should be a primary key to uniquely identify each row
+          2. Second
+          3. Third
+             - Is it likely that many new columns will need to be added to this able?
+             - could any of this table's field require a global update at any point?
+
+    NB// Normalization don't work on high traffic sites since it will cause MySQL to thrash.
+
+    ## Relationships
+    - MySQL is called a relational database managment system because its tables store not only data but the relationships among the data. 
+
+        ### Type of relationships
+          1. One-to-One
+             - Each item has a relationship to only one item of the other type.
+              - If two items have one-to-one relationship, you include them as columns in the same table bcoz:
+                a. You want to be prepared in case the relationships changes later and is no longer one-to-one.
+                b. The table has alot of columns, and you think that  perfomance and maintenance would improve by splitting it.
+          2. One-to-many
+             - Occurs when one row in one table is linked to many rows in another table.
+          3. Many-to-Many
+             - Many rows in one table are linked to many rows in another table.
+
+
+# Databases and Anonymity.
+# Transactions.
+# Transaction Storage Engines.
+    - To be able to use MySQL's transaction facility, you have to be using MySQL's InnoDB storage engine. 

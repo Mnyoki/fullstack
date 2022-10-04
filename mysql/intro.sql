@@ -22,7 +22,10 @@ INSERT INTO classics(author, title, type, year)
  INSERT INTO classics(author, title, category, year, isbn) VALUES
  ('Robin Nixon', 'HTML CSS PHP MYSQL Javascript with jQUERY', 'Programing', '2020', '7890123456789'),
  ('Robin Sharma', 'The 5 AM Club', 'Self Help', '2017', '8901234567890');
- SELECT * FROM classics;
+ SELECT 
+    *
+FROM
+    classics;
  
  #Joining Tables Together. 
  CREATE TABLE customers (
@@ -155,3 +158,6 @@ INSERT INTO classics(author, title, type, year)
  DESCRIBE classics;
  SHOW TABLES;
 
+GRANT PRIVILEGES ON database.object TO 'username'@'hostname'
+ IDENTIFIED BY 'password';
+ 
