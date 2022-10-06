@@ -1,0 +1,75 @@
+## Connecting to a mysql database.
+<?php
+ require_once 'login.php';
+ $conn = new mysqli($hn, $un, $pw, $db);
+ if ($conn->connect_error) die("Fatal Error");
+?>
+
+## Building and extracting a query
+<?php
+ $query = "SELECT * FROM classics";
+ $result = $conn->query($query);
+ if (!$result) die("Fatal Error");
+?>
+
+## Fetching a result
+
+fetch_array method can return three types of array accoding to the value passed to it:
+1. MYSQLI_NUM
+    - Numeric array.
+                   -each column appears in the array in the oder in which you defined it whon you created or altered the table.
+
+2. MYSQLI_ASSOC
+    - Associative array 
+                      - Each key is the name of a column. Because items of data are referenced by column namerather than index number.
+                      - Easy debugging and helps other programmers bettter manage your code.
+
+3. MYSQLI_BOTH
+    -Associative and numeric array
+                                 - Associative arrays are usually more useful than numeric one because you can refer to each column by name such as $row['author'], instead of trying to remember where it is in the column order.
+                        NB// This script uses an associative array, leading us to pass MYSQLI_ASSOC.
+
+# Clossing a connection
+Freeing memory to prevent problems later in your script.(higher traffic pages)
+
+  $reult->close();
+  $conn->close();
+ 
+
+    #PREVENTING HACKING ATTEMPS.
+
+  ### Using placeholders.
+   - they are positions with  prepared statements in which data is transferred directly to the database, without the possibility of user-submitted (or other) data being interpreted as MySQL statements (and the pontential for hacking that could then result).
+   -The technology works by requiring you to first prepare the statement you wish to be executed in MySQL, but leaves all the parts of the statement that refer to data as simple question marks.
+
+   PREPARE statement FROM "INSERT INTO classics VALUES(?,?,?,?,?)";
+SET @author = "Emily Brontë",
+ @title = "Wuthering Heights",
+ @category = "Classic Fiction",
+ @year = "1847",
+ @isbn = "9780553212587";
+EXECUTE statement USING @author,@title,@category,@year,@isbn;
+DEALLOCATE PREPARE statement;
+
+$stmt = $conn->prepare('INSERT INTO classics VALUES(?,?,?,?,?)');
+
+$stmt->bind_param('sssss', $author, $title, $category, $year, $isbn);
+
+• i: The data is an integer.
+• d: The data is a double.
+• s: The data is a string
+• b: The data is a BLOB (and will be sent in packets).
+
+$author = 'Emily Brontë';
+$title = 'Wuthering Heights';
+$category = 'Classic Fiction';
+$year = '1847';
+$isbn = '9780553212587';
+  
+  $stmt->execute();
+
+$stmt:
+printf("%d Row inserted.\n", $stmt->affected_rows);
+
+$stmt->close();
+$conn->close();
