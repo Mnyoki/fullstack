@@ -47,4 +47,5 @@ $t = $p + $k;
 echo " \n ++j : \n" . $j;
 echo "\n k++ : \n" . $k;
 echo "\n" . $p;
+echo "$temp"
 ?>

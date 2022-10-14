@@ -20,6 +20,7 @@ echo "\n";
 echo "WELCOME! \n";
 echo "Sir : ";
 echo fix_names($fname, $sname, $lname);
+echo date(DATE_RSS) . "\n";
 //$names = fix_names($fname, $sname, $lname);
 //echo $names[0] . " " . $names[1] . " " . $names[2] . " ";
 //function fix_names($n1, $n2, $n3)

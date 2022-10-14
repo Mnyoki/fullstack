@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form Test</title>
+</head>
+<body>
+    
+    <form method="post" action="calc.php"><pre>
+
+       Loan Amount <input type="text" name="principle">
+       Monthly Repayment <input type="text" name="monthly">
+       Number of Years <input type="text" name="years" value="25">
+       Interest Rate <input type="text" name="rate" value="6">
+
+
+       <!--sends the last selected item -->
+       Vanilla <input type="checkbox" name="ice" value="Vanilla">
+       Chocolate <input type="checkbox" name="ice" value="Chocolate" checked="checked">
+       Strawberry <input type="checkbox" name="ice" value="Strawberry">
+       <input type="submit">
+
+
+       <!-- sends an array of selected items-->
+       Vanilla <input type="checkbox" name="ice[]" value="Vanilla">
+       Chocolate <input type="checkbox" name="ice[]" value="Chocolate">
+       Strawberry <input type="checkbox" name="ice[]" value="Strawberry">
+
+       <!--radio-->
+       8am-Noon<input type="radio" name="time" value="1">
+       Noon-4pm<input type="radio" name="time" value="2" checked="checked">
+       4pm-8pm<input type="radio" name="time" value="3">
+
+       <!--select from a list your fav-->
+
+       <h1>Vegetables</h1>
+       <select name="veg" size="1">
+        <option value="Peas">Peas</option>
+        <option value="Beans" selected>Beans</option>
+        <option value="Carrots">Carrots</option>
+        <option value="Cabbage">Cabbage</option>
+        <option value="Broccoli">Broccoli</option>
+        
+       </select>
+
+       <!-- selecting multiple of favourite items-->
+       <h2>Vegs</h2>
+       <select name="veg" size="5" multiple>
+        <option value="Peas">Peas</option>
+        <option value="Beans">Beans</option>
+        <option value="Carrots">Carrots</option>
+        <option value="Cabbage">Cabbage</option>
+        <option value="Broccoli">Broccoli</option>
+        <option value="Kales">Kales</option>
+        <option value="Spinach">Spinach</option>
+        
+       </select>
+
+       <!-- Label
+        makes everything selectable including the text and the button
+    
+       -->
+
+       <h1>Time available</h1>
+       <label>8am-noon<input type="radio" name="time"></label>
+       <lable>8pm-dawn<input type="radio" name="ti"> </lable>
+<input type="submit" value="search">
+    </pre>
+
+    </form>
+
+    <!--
+        php sanitization
+        //use of magic quotes
+        //use of string-escape-entity
+        //use of stripslashes
+        //ue of placeholders and prepare statement
+
+        example
+        <?php
+        function sanitizeString($var)
+        {
+            if (get_magic_qoute_gpc());
+            $var = stripslashes($var);
+            $var = strip_tags(var);
+            $var = htmlentities($var);
+            return $var;
+        }
+
+        funtion sanitizeMySQ($connection, $var)
+        {
+            $var = $connection->real_escape_string($var);
+            $var = sanitizeString($var);
+            return $var;
+        }
+        ?>
+    -->
+
+    Select destination:
+    <input type='url' name='site' list='links'>
+    <datalist id='links'>
+     <option label='Google' value='http://google.com'>
+     <option label='Yahoo!' value='http://yahoo.com'>
+     <option label='Bing' value='http://bing.com'>
+     <option label='Ask' value='http://ask.com'>
+    </datalist>
+
+</body>
+</html>
