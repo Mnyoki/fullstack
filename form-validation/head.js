@@ -103,4 +103,4 @@ function validateEmail(field)
 
 document.write("Cats are friendly. i like cats.".replace(/cats/gi, "dogs"));
 
-document.write(/f[oi]x/.test("<br>the quick brown "));
+document.write(/f[oi]x/.test("the quick brown "));
