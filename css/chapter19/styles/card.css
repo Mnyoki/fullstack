@@ -1,0 +1,18 @@
+body
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border:10px solid #000;
+    background: -webkit-radial-gradient(center, gray, navy);
+}
+.border
+{
+    font-size: 170%;
+    font-family: 'Times New Roman';
+    font-style: italic;
+    text-align: center;
+    padding: 60px;
+    width: 500px;
+    height: 500px;
+}

@@ -1,0 +1,88 @@
+
+.aside 
+{
+    height: 400px;
+    width: 400px;
+    margin: 30px;
+
+}
+
+.combine
+{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    float: left;
+}
+
+.list
+{
+    margin: 4px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: flex;
+    height: 300px;
+    width: 100%;
+}
+
+.list h1
+{
+  position: sticky; 
+  color: blueviolet; 
+    
+}
+
+.list .mylist
+{
+    position: block;
+    
+    margin: 20px;
+    
+
+}
+
+ol ol
+{
+    list-style-type: disc;
+    color: yellowgreen;
+    font-size: 22px;
+}
+
+ol > li 
+{
+    font-weight: bold;
+}
+
+#invest 
+{
+    margin-top: 15%;
+    list-style: none;
+    border: 1px solid green;
+}
+
+span#myid 
+{
+    text-decoration: underline;
+}
+
+div#myid
+{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#myid
+{
+    color:rgb(61, 21, 21);
+    font-size: 23px;
+}
+
+#boxout * 
+{
+    color: yellowgreen;
+}
+
+@media screen {
+
+}

@@ -1,0 +1,14 @@
+.text
+{
+    height: 300px;
+    width: 500px;
+    background-color: antiquewhite;
+    margin: 30px;
+}
+
+h1 .pseudo:first-letter
+{
+    font-size: 400%;
+    float: left;
+    color:aqua
+}

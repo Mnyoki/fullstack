@@ -1,0 +1,30 @@
+.columns
+{
+    text-align: justify;
+    font-size: 16pt;
+   color: hsla(150, 100%, 20%, 0.7);
+   word-wrap: break-word;
+}
+.columns p
+{
+    column-count: 2;
+    column-gap: 1em;
+    column-rule: 1px;
+}
+
+.columns h1
+{
+    text-shadow: 3px 3px 6px #444;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    transform:rotate(45deg);
+    margin: 100px;
+}
+.columns h2
+{
+    text-align: center;
+    transform:scale(1.5, 2) rotate(315deg);
+    top: 50px;
+}

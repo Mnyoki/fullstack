@@ -1,0 +1,29 @@
+#container {
+    position :absolute;
+    top :50px;
+    left :0px;
+    }
+    #object1 {
+    position :absolute;
+    background:pink;
+    width :100px;
+    height :100px;
+    top :0px;
+    left :0px;
+    }
+    #object2 {
+    position :relative;
+    background:lightgreen;
+    width :100px;
+    height :100px;
+    top :0px;
+    left :110px;
+    }
+    #object3 {
+    position :fixed;
+    background:yellow;
+    width :100px;
+    height :100px;
+    top :50px;
+    left :220px;
+    }

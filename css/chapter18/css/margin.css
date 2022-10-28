@@ -1,0 +1,17 @@
+#margin
+{
+    background : lightgreen;
+    border: 1px solid;
+    font: 9px "Courier New";
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    margin: 10px 20px 30px 40px;
+}
+
+table
+{
+    padding: 0;
+    border: 1px solid black;
+    background: cyan;
+}

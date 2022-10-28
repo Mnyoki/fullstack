@@ -1,0 +1,68 @@
+/*.div
+{
+    border: 1px solid black;
+}*/
+
+.div
+{
+    background-color: rgb(235, 235, 176);
+    margin: 5px;
+    font-size: 14pt;
+    width: 3in;
+    height: 120%;
+    font-family: "Times New Roman", Georgia, serif;
+    font-style: oblique;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+}
+.span
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    width: 20ex;
+    font-style: normal;
+    text-align: center;
+    font-weight:lighter;
+    
+}
+
+h2 
+{
+   text-align:justify;
+    text-decoration: underline;
+    line-height: 125%;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+}
+
+.wonder 
+{
+    margin-bottom: 5px;
+line-height: 125%;
+word-spacing: 4px;;
+letter-spacing: 2px;
+text-align: center;
+/*text-indent: 20px;*/
+}
+.wonder h1
+{
+    text-align: justify;
+    margin: 20pc;
+    letter-spacing: 10px;
+    line-height: 5px;
+    word-spacing: 6px;
+    display: inline-block;
+    font-size: 20px;
+    color: rgb(23.4%, 67.6%, 15.5%);
+}
+.wonder h2
+{
+    color: rgb(70, 145, 102);
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: lighter;
+    margin-top: 40px;
+    margin-bottom: 0;
+}

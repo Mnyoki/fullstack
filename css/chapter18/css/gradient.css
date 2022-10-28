@@ -1,0 +1,17 @@
+.gradient
+{
+    /**background: orange;**/
+    /*background: linear-gradient(top, #fb0, #f50);*/
+
+    /*background: -moz-linear-gradient(top, #fb0, #f50);/*
+
+    
+
+    /*background: -o-linear-gradient(top, #fb0, #f50);*/
+
+    /*background: -ms-linear-gradient(top, #fb0, #f50);*/
+    background: -webkit-linear-gradient(top, rgb(250, 200, 63), rgb(203, 243, 60));
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}

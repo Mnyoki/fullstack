@@ -1,0 +1,44 @@
+header 
+{
+    display: flex;
+    float: left;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+    width: 100%;
+    font-size: 34px;
+}
+#link1
+{
+    margin-right: 59px;
+}
+#link2
+{
+    margin-left: 59px;
+}
+#link
+{
+    margin-right: 118px;
+}
+#search
+{
+    margin-left: 118px;
+    text-align: center;
+    height: 40px;
+    width: 173px;
+    border-radius: 10%;
+}
+
+#txt
+{
+    border: 1px solid;
+    background: orange;
+    color: darkred;
+    font: 12px Arial;
+    text-align: justify;
+    display: table-cell;
+    width: 148px;
+    padding: 10px 20px 30px 40px;
+}
