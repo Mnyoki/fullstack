@@ -1,0 +1,151 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html
+{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 34px;
+    line-height: 53px;
+    word-spacing: 16px;
+    letter-spacing: 14px;
+}
+.container
+{
+    background: -webkit-radial-gradient(center,  rgb(115, 173, 115), gray);
+    height: 680px;
+    display: flexbox;
+    position: relative;
+}
+
+.container p 
+{
+    position: relative;
+    padding: 20px;
+    
+
+}
+.container button
+{
+    position: relative;
+    justify-content: center;
+    left: 1000px;
+    color: gray;
+
+}
+
+#click1, #click2
+{
+    height: 54px;
+    width: 100px;
+    border-radius: 3px;
+    background: gray;
+    transition: all 0.3s linear;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+    
+}
+
+#click1:hover, #click2:hover
+{
+    background: -webkit-radial-gradient(center, gray, rgb(115, 173, 115));
+    color: black;
+}
+
+.inputFields
+{
+    width: 500px;
+    height: 200px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+#first
+{
+    width: 170px;
+    height: 30px;
+    position: relative;
+    text-align: center;
+    left: 50px;
+    background: gray;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+
+/*
+#first:focus
+{
+    background: white;
+    border: none
+}
+
+#first:hover
+{
+    background: white;
+}
+*/
+
+
+#password
+{
+    width: 170px;
+    height: 30px;
+    position: relative;
+    text-align: center;
+    top: 40px;
+    right: 163px;
+    background: gray;
+    border: none;
+    cursor: pointer;
+}
+
+/*
+#password:focus
+{
+    background: white;
+    border: none;
+}
+
+#password:hover
+{
+    background: white;
+}
+*/
+#checkbox
+{
+    position: relative;
+    top: 90px;
+    right: 370px;
+    background-color: #aaa;
+    border: none;
+}
+
+
+#lable
+{
+    font-size: 15px;
+    position: relative;
+    left: 75px;
+    top: 35px;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    line-height: 25px;
+}
+
+#signIn
+{
+    position: relative;
+    top: 70px;
+    right: 110px;
+    height: 30px;
+    width:60px;
+}

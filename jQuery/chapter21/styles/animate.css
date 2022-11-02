@@ -1,0 +1,18 @@
+html{
+    overflow-x: hidden;
+    font-size: 30px;
+}
+
+#drag
+{
+    position: relative;
+}
+
+#box
+{
+    width: 100vw;
+    height: 480px;
+    background: green;
+    border: 1px solid #444;
+    margin-left: 0;
+}

@@ -1,0 +1,10 @@
+.me3 li
+{
+    list-style: none;
+}
+
+.me3::after
+{
+    font-size: 30px;
+    color: blue;
+}
