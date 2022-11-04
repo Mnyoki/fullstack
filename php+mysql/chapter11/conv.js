@@ -1,6 +1,19 @@
-let far = 23;
-let cess;
 
+
+function convet() {
+
+    let far = parseInt(document.getElementById('f'));
+    let cess = parseInt(document.getElementById('c'));
+    let result = far + cess;
+    if (far > 0 || cess > 0) {
+        document.write(`the results is ${result}`);
+    } else {
+        document.write('helo' + far + " " + cess)
+    }
+
+}
+
+/*
 if (far = 23)
 {
     
@@ -11,3 +24,5 @@ if (far = 23)
     cess = change * conv;
     console.log (cess);
 }
+*/
+
