@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+         <div class="intro">
+            <center>
+                <h1>Avail</h1>
+                <p>learning is hardwork for you to get the ins and outs of what you are learning so as to be of use to the society. </p>
+            </center>
+         </div>
+
+         <div class="myvideo">
+            <video width="560" height="320" controls>
+                <source src="/videos/VID-20220619-WA0002.mp4" type="video/mp4">
+            </video>
+            <br>
+            <video width="560" height="320" poster muted autoplay loop controls>
+                <source src="/videos/VID-20220827-WA0000.mp4" type="video/mp4">
+            </video>
+
+            <br>
+
+            <video width='560' height='320' controls>
+                <object width='560' height='320'
+                type='application/x-shockwave-flash'
+                data='flowplayer.swf'>
+                <param name='movie' value='flowplayer.swf'>
+                <param name='flashvars'
+                value='config={"clip": {
+                "url": "movie.mp4",
+                "autoPlay":false, "autoBuffering":true}}'>
+                </object>
+                <source src='/videos/Wise Quotes.mp4' type='video/mp4'>
+                </video>
+            <br>
+
+            <video controls preload="auto">
+                <source src="/videos/Jesus Christ - Life Changing Quotes.mp4" type="video/mp4">
+            </video>
+            <video src="/videos/4_5872864450062583408.mp4" id="myvideo"></video>
+            <br>
+            <button onclick="playvideo()">Play video</button>
+            <button onclick="pausevideo()">Pause Video</button>
+
+
+         </div>
+
+    </div>
+
+    <script src="/scripts/video.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/audio.css">
+</head>
+<body>
+    <div class="sectio">
+        <div class="intro">
+            <h1>Get the vibe and flow.</h1>
+            <p>Music has been my thing since ertenity. lets share the vibe and have some fun</p>
+            <blockquote>
+                For we all need time alone with some cool relaxing song.
+            </blockquote>
+        </div>
+        <div class="audio">
+            <h3>masego_don_toliver_mystery_lady<br></h3>
+            <audio controls>
+                <source src="/audios/masego_don_toliver_mystery_lady_aac_17646.m4a" type="audio/aac">
+            </audio>
+            <br>
+            
+            <h3>sam_fischer_demi_lovato_what_other_people_say <br></h3>
+            <audio controls>
+                <source src="/audios/sam_fischer_demi_lovato_what_other_people_say_official_video_aac_34790.m4a" type="audio/aac">
+            </audio>
+            <br>
+            <h3>lukas_graham_mama_said <br></h3>
+            <audio controls width="300px" height="30px">
+                <source src="/audios/lukas_graham_mama_said_lyrics_aac_50690.m4a" type="audio/aac">
+            </audio>
+
+            <audio id="myaudio">
+                <source src="/audios/4_5929515240495516157.mp3" type="audio/mp3">
+        </audio><br>
+
+        <h3>My God</h3>
+
+        <audio controls>
+            <object type="application/x-shockwave-flash"
+            data="audioplayer.swf" width="300" height="30">
+            <param name="FlashVars"
+            value="mp3=audio.mp3&showstop=1&showvolume=1">
+            </object>
+            <source src='/audios/flash.mp3' type='audio/mp3'>
+            <source src='audio.ogg' type='audio/ogg'>
+           </audio>
+        </div>
+
+        <h3>jireh</h3>
+
+        <button onclick="playaudio()">Play Audio</button>
+        <button onclick="pauseaudio()">Pause Audio</button>
+
+    </div>
+    <script src="/scripts/audio.js"></script>
+</body>
+</html>
