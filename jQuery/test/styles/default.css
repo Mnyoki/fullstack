@@ -1,0 +1,91 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html
+{
+    overflow-x: hidden;
+    line-height: 26px;
+    word-spacing: 0.5em;
+    letter-spacing: 0.2em;
+}
+
+body
+{
+    background-color: navy;
+    color: gray;
+    position: relative;
+}
+.container 
+{
+    background-color: white;
+    height: 700px;
+    width: 100%;
+    position: relative;
+}
+
+.nav
+{
+    display: flexbox;
+    background: aqua;
+    height: 13%;
+    width:  100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.lnav li, .rnav li
+{
+    display: inline-block;
+    list-style: none;
+    margin-right: -5px;
+}
+
+.nav ul
+{
+    text-align: center;
+}
+
+.nav ul a
+{
+    display: block;
+    width: 54px;
+    height: 14px;
+}
+
+.rnav
+{
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    list-style: none;
+}
+
+.lnav
+{
+    position: relative;
+    top: 30%;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.qoute
+{
+    position: relative;
+    left: 25%;
+}
+
+#aboutTop
+{
+    background: gray;
+    color: blue;
+}
+
+#aboutTop:hover
+{
+    background: blue;
+    color: gray;
+}

@@ -18,7 +18,7 @@ for ($j = 0; $j < $rows; ++$j)
     $result->data_seek($j);
     echo 'Title: ' .htmlspecialchars($result->fetch_assoc()['title']) .'<br>';
     $result->data_seek($j);
-    echo 'Type: '.htmlspecialchars($result->fetch_assoc()['type']).'<br>';
+    echo 'Type: '.htmlspecialchars($result->fetch_assoc()['category']).'<br>';
     $result->data_seek($j);
     echo 'Year: ' .htmlspecialchars($result->fetch_assoc()['year']) .'<br>';
     $result->data_seek($j);

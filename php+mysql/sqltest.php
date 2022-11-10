@@ -24,7 +24,7 @@ $year   = get_post($conn, 'year');
 $isbn   = get_post($conn, 'isbn');
 
 $query = "INSERT INTO classics VALUES" . 
-"('author', 'title', 'type', 'year', 'isbn' )";
+"('author', 'title', 'category', 'year', 'isbn' )";
 
 $result = $conn->query($query);
 if (!$result) echo "Insert Failed<br><br>";
@@ -34,7 +34,7 @@ echo <<<_END
 <form action="sqltest.php" method="post"><pre>
 Author <input type="text" name="author" placeholder="Robin Nixon" required>
 Title <input type="text" name="title" placeholder="MySQL JavScript - with jQuery" required>
-Type <input type="text" name="type" placeholder="Programming" required>
+Type <input type="text" name="category" placeholder="Programming" required>
 Year <input type="text" name="year" placeholder="2015" required>
 ISBN <input type="text" name="isbn" placeholder="1234567890123" required>
      <input type="submit" value="Add Record">
