@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        if (typeof localStorage == 'undefined')
+        {
+            alert("local storage is not available.");
+        }
+        else
+        {
+            loc = localStorage.getItem('loc');
+            lan = localStorage.getItem('lan')
+            alert("The current values of 'loc' and 'lan' are " + loc + " , " + lan);
+
+            localStorage.setItem('loc', 'USA');
+            localStorage.setItem('lan', 'English');
+            loc = localStorage.getItem('loc');
+            lan = localStorage.getItem('lan');
+
+            alert("the current values of 'loc' and 'lan' are " + loc + " , " + lan);
+
+            localStorage.removeItem('loc');
+            localStorage.removeItem('lan');
+            lan = localStorage.getItem('lan');
+            loc = localStorage.getItem('loc');
+
+            alert("the current values of 'loc' and 'lan' are " + lan + " , " + loc);
+            
+        }
+    </script>
+</body>
+</html>
